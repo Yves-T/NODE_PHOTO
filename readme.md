@@ -18,8 +18,12 @@ AWS CloudFront is used to set up a CDN for the images.
 ## Config files
 
 The config files are not commited for security reasons. If you want
-to run this app you need to create two json files in app/config with
-following structure
+to run this app you need to create two json files
+
+ * development.json
+ * production.json
+
+in app/config with following structure.
 
 ```json
 {
