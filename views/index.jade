@@ -1,0 +1,15 @@
+extends layout
+
+block content
+
+  #home.container
+    .jumbotron.text-center
+      h1
+        span.fa.fa-lock
+        |  Photo app Authentication
+      p Login or Register with:
+      a(href="/auth/google").btn.btn-danger
+        span.fa.fa-google-plus
+        | google
+
+  script(src="/js/ga.js")
