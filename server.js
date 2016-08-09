@@ -3,12 +3,10 @@ const path = require('path');
 const config = require('./app/config/config');
 const photoGridApp = require('./app');
 const passport = require('passport');
-const cookieParser = require('cookie-parser');
 
 
 const app = express();
 
-app.use(cookieParser());
 app.use(photoGridApp.session);
 app.use(passport.initialize());
 app.use(passport.session());
